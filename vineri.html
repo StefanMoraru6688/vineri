@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <h1 style="text-align: center;">Preparate</h1>
+   <div id="avocado">Guacamole</div>
+   <button type="button" onclick="mancare">Guacamole</button>
+   <img id="poza" src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2024-01-how-to-make-guacamole%2Fguacamole-0679"style width="100px">
+   <script>
+    function mancare()
+    {
+        document.getElementById("poza").innerHTML="aocado";
+        document.getElementById("poza").style.color = "red"
+    }
+
+   </script>
+    <h1> Acesta este primul meu site facut pe gitHub</h1>
+    <p> Detalii: </p>
+    <div id="home"> home</div>
+    <button id="accesare" onclick="butonrosu()">video</button>
+    <button id="al doilea" onclick="al_doilea_buton()"> shorts</button>
+    <img id="imagine" src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <script>
+        function butonrosu(){
+        document.getElementById("accesare").style.color = "red";
+        document.getElementById("home").style.textAlign="right";
+
+        }
+        function al_doilea_buton(){
+            document.getElementById("al doilea").style.fontSize="250px";
+            document.getElementById("imagine").style.width="100px";
+
+        }
+    </script>
+
+
+
+</body>
+</html>
