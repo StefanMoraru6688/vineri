@@ -1,43 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Site Despre Fotbal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-<body style="background-color: aqua;">
-    <h1 style="text-align: center;">Preparate</h1>
-   <div id="avocado">Guacamole</div>
-   <button type="button" onclick="mancare">Guacamole</button>
-   <img id="poza" src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2024-01-how-to-make-guacamole%2Fguacamole-0679"style width="100px">
-   <script>
-    function mancare()
-    {
-        document.getElementById("poza").innerHTML="aocado";
-        document.getElementById("poza").style.color = "red"
-    }
+<body>
+    <header>
+        <h1>Fotbal - Sportul Rege</h1>
+    </header>
 
-   </script>
-    <h1> Acesta este primul meu site facut pe gitHub</h1>
-    <p> Detalii: </p>
-    <div id="home"> home</div>
-    <button id="accesare" onclick="butonrosu()">video</button>
-    <button id="al doilea" onclick="al_doilea_buton()"> shorts</button>
-    <img id="imagine" src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-    <script>
-        function butonrosu(){
-        document.getElementById("accesare").style.color = "red";
-        document.getElementById("home").style.textAlign="right";
+    <main>
+        <section>
+            <h2>Despre Fotbal</h2>
+            <p>Fotbalul este cel mai popular sport din lume, cu milioane de fani și echipe de-a lungul globului. Este un sport în care două echipe concurează pentru a marca goluri într-un teren de joc rectiliniu.</p>
+        </section>
 
-        }
-        function al_doilea_buton(){
-            document.getElementById("al doilea").style.fontSize="250px";
-            document.getElementById("imagine").style.width="100px";
+        <section>
+            <h2>Echipe Celebre</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Poziție</th>
+                        <th>Echipa</th>
+                        <th>Țară</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>FC Barcelona</td>
+                        <td>Spania</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Real Madrid</td>
+                        <td>Spania</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Manchester United</td>
+                        <td>Anglia</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Bayern Munchen</td>
+                        <td>Germania</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Paris Saint-Germain</td>
+                        <td>Franța</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
-        }
-    </script>
-
-
-
+    <footer class="footer">
+        <p>&copy; 2025 Organizati de fotbal.</p>
+    </footer>
 </body>
 </html>
